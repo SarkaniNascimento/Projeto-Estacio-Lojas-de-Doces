@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>🍭 Doces Deliciosos - E-commerce Premium</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Carregando delícias...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+        <div class="logo">
+                <i class="fas fa-candy-cane"></i>
+            <h1>Doces Deliciosos</h1>
+        </div>
+            
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Início</a></li>
+                    <li><a href="#products" class="nav-link">Produtos</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar doces..." id="search-input">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="cart-icon" id="cart-toggle">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2 class="hero-title">Os Melhores Doces do Brasil</h2>
+                <p class="hero-subtitle">Sabores únicos que despertam memórias afetivas</p>
+                <button class="cta-button" onclick="scrollToProducts()">
+                    <span>Explorar Produtos</span>
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+            </div>
+            <div class="hero-image">
+                <div class="floating-elements">
+                    <div class="floating-doce doce-1">🍭</div>
+                    <div class="floating-doce doce-2">🧁</div>
+                    <div class="floating-doce doce-3">🍰</div>
+                    <div class="floating-doce doce-4">🍪</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-animation"></div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Produtos</h2>
+                <p class="section-subtitle">Doces artesanais feitos com muito carinho</p>
+            </div>
+
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="tradicional">Clássicos</button>
+                <button class="filter-btn" data-filter="especial">Especiais</button>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card" data-category="tradicional" data-id="1">
+                    <div class="product-badge">Bestseller</div>
+                    <div class="product-image">
+                        <img src="https://s2-receitas.glbimg.com/hT_mwWzl5dBsGdINZKnU2GFt3iI=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2023/O/6/O6gVqvQ02RbAo8TPZGcQ/brigadeiro-receita.jpg" alt="Brigadeiro">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(234)</span>
+                        </div>
+                        <h3 class="product-title">Brigadeiro</h3>
+                        <p class="product-description">O clássico doce brasileiro feito com leite condensado e chocolate</p>
+                        <div class="product-price">
+                            <span class="current-price">R$ 2,50</span>
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                <i class="fas fa-shopping-cart"></i>
+                                Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="tradicional" data-id="2">
+                    <div class="product-badge">Popular</div>
+                    <div class="product-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8lW4ii2Y6Uwi1ImJyWswyeR5smlLQWjIPvw&s" alt="Beijinho">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(189)</span>
+                        </div>
+                        <h3 class="product-title">Beijinho</h3>
+                        <p class="product-description">Doce de coco com leite condensado, coberto com coco ralado</p>
+                        <div class="product-price">
+                            <span class="current-price">R$ 2,50</span>
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="2" data-name="Beijinho" data-price="2.50">
+                                <i class="fas fa-shopping-cart"></i>
+                                Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="tradicional" data-id="3">
+                    <div class="product-badge new">Novo</div>
+                    <div class="product-image">
+                        <img src="https://receitatodahora.com.br/wp-content/uploads/2022/09/brigadeiro-casadinho.jpg" alt="Casadinho">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(156)</span>
+                        </div>
+                        <h3 class="product-title">Casadinho</h3>
+                        <p class="product-description">Metade brigadeiro, metade beijinho - o melhor dos dois mundos</p>
+                        <div class="product-price">
+                            <span class="current-price">R$ 3,00</span>
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="3" data-name="Casadinho" data-price="3.00">
+                                <i class="fas fa-shopping-cart"></i>
+                                Adicionar
+                            </button>
+                        </div>
+                </div>
+            </div>
+
+                <div class="product-card" data-category="tradicional" data-id="4">
+                    <div class="product-badge premium">Premium</div>
+                    <div class="product-image">
+                        <img src="https://d2qcpt1idvpipw.cloudfront.net/recipes/2020/10/cajuzinho-perfeito_28082018155200.jpg" alt="Cajuzinho">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(203)</span>
+                        </div>
+                        <h3 class="product-title">Cajuzinho</h3>
+                        <p class="product-description">Doce de amendoim com formato de caju, coberto com açúcar cristal</p>
+                        <div class="product-price">
+                            <span class="current-price">R$ 2,80</span>
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="4" data-name="Cajuzinho" data-price="2.80">
+                                <i class="fas fa-shopping-cart"></i>
+                                Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="especial" data-id="5">
+                    <div class="product-badge limited">Especial</div>
+                    <div class="product-image">
+                        <img src="https://cdn.casaeculinaria.com/wp-content/uploads/2024/04/09093952/Olho-de-sogra-1.webp" alt="Olho de Sogra">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(78)</span>
+                        </div>
+                        <h3 class="product-title">Olho de Sogra</h3>
+                        <p class="product-description">Doce de coco com ameixa seca no centro, uma delícia tradicional</p>
+                        <div class="product-price">
+                            <span class="current-price">R$ 3,50</span>
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="5" data-name="Olho de Sogra" data-price="3.50">
+                                <i class="fas fa-shopping-cart"></i>
+                                Adicionar
+                            </button>
+                        </div>
+                </div>
+            </div>
+
+                <div class="product-card" data-category="tradicional" data-id="6">
+                    <div class="product-badge">Clássico</div>
+                    <div class="product-image">
+                        <img src="https://i.ytimg.com/vi/gBDYHnQtCII/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBnfUfn5iB1S_Yh8__yGJk8xtUbSw" alt="Docinho de Coco">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(167)</span>
+                        </div>
+                        <h3 class="product-title">Docinho de Coco</h3>
+                        <p class="product-description">Coco ralado fresco com leite condensado, puro sabor tropical</p>
+                        <div class="product-price">
+                            <span class="current-price">R$ 2,30</span>
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="6" data-name="Docinho de Coco" data-price="2.30">
+                                <i class="fas fa-shopping-cart"></i>
+                                Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Seu Carrinho</h3>
+            <button class="close-cart" id="close-cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Seu carrinho está vazio</p>
+                <small>Adicione alguns doces deliciosos!</small>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total: R$ <span id="cart-total">0,00</span></span>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">
+                <i class="fas fa-credit-card"></i>
+                Finalizar Compra
+            </button>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-candy-cane"></i>
+                        <h3>Doces Deliciosos</h3>
+                    </div>
+                    <p>Os melhores doces artesanais do Brasil, feitos com muito carinho e ingredientes selecionados.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#products">Produtos</a></li>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                        <p><i class="fas fa-envelope"></i> contato@docesdeliciosos.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Receba nossas promoções e novidades!</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Seu e-mail">
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+        <p id="footer-date"></p>
+                <p>Desenvolvido com ❤️ para os amantes de doces</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <span class="toast-message">Produto adicionado ao carrinho!</span>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
