@@ -1,0 +1,1726 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍭 Doces Deliciosos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/catalogo.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-candy-cane"></i>
+                <a href="index.html"><h1>Doces Deliciosos</h1></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="catalogo.html" class="nav-link active">Catálogo</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon" id="cart-toggle">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+                <!--Seções de conteúdo-->
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="docinhos">Docinhos</button>
+                    <button class="tab-btn" data-tab="gelados">Doces Gelados</button>
+                    <button class="tab-btn" data-tab="bolos">Bolos e Tortas</button>
+                    <button class="tab-btn" data-tab="folhados">Folhados e Panquecas</button>
+                </div>
+                <!--Conteúdo da seção de docinhos-->
+                <div class="tab-content active" id="docinhos">
+                    <section class="products-section">
+                        <div class="container">
+                            <div class="search-bar">
+                                <input id="search-docinhos" type="text" placeholder="Brigadeiro, Beijinho, etc...">
+                            </div>
+                            <div class="products-grid" id="produtos-docinhos">
+                                <div class="product-card" data-category="tradicional" data-id="1">
+                                    <a href="#modal-brigadeiro" class="modal-trigger">
+                                        <div class="product-badge">Bestseller</div>
+                                        <div class="product-image">
+                                            <img src="https://s2-receitas.glbimg.com/hT_mwWzl5dBsGdINZKnU2GFt3iI=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2023/O/6/O6gVqvQ02RbAo8TPZGcQ/brigadeiro-receita.jpg" alt="Brigadeiro">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(244)</span>
+                                            </div>
+                                            <h3 class="product-title">Brigadeiro</h3>
+                                            <p class="product-description">O clássico doce brasileiro feito com leite condensado e chocolate</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 2,50</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card" data-category="tradicional" data-id="2">
+                                    <a href="#modal-beijinho" class="modal-trigger">
+                                        <div class="product-badge">Popular</div>
+                                        <div class="product-image">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8lW4ii2Y6Uwi1ImJyWswyeR5smlLQWjIPvw&s" alt="Beijinho">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(189)</span>
+                                            </div>
+                                            <h3 class="product-title">Beijinho</h3>
+                                            <p class="product-description">Doce de coco com leite condensado, coberto com coco ralado</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 2,50</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card" data-category="tradicional" data-id="3">
+                                    <a href="#modal-casadinho" class="modal-trigger">
+                                        <div class="product-badge new">Novo</div>
+                                        <div class="product-image">
+                                            <img src="https://receitatodahora.com.br/wp-content/uploads/2022/09/brigadeiro-casadinho.jpg" alt="Casadinho">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                                <span>(156)</span>
+                                            </div>
+                                            <h3 class="product-title">Casadinho</h3>
+                                            <p class="product-description">Metade brigadeiro, metade beijinho - o melhor dos dois mundos</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 3,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card" data-category="tradicional" data-id="4">
+                                    <a href="#modal-cajuzinho" class="modal-trigger">
+                                        <div class="product-badge premium">Premium</div>
+                                        <div class="product-image">
+                                            <img src="https://d2qcpt1idvpipw.cloudfront.net/recipes/2020/10/cajuzinho-perfeito_28082018155200.jpg" alt="Cajuzinho">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(203)</span>
+                                            </div>
+                                            <h3 class="product-title">Cajuzinho</h3>
+                                            <p class="product-description">Doce de amendoim com formato de caju, coberto com açúcar cristal</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 2,80</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card" data-category="especial" data-id="5">
+                                    <a href="#modal-olhodesogra" class="modal-trigger">
+                                        <div class="product-badge limited">Especial</div>
+                                        <div class="product-image">
+                                            <img src="https://cdn.casaeculinaria.com/wp-content/uploads/2024/04/09093952/Olho-de-sogra-1.webp" alt="Olho de Sogra">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                                <span>(78)</span>
+                                            </div>
+                                            <h3 class="product-title">Olho de Sogra</h3>
+                                            <p class="product-description">Doce de coco com ameixa seca no centro, uma delícia tradicional</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 3,50</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card" data-category="tradicional" data-id="6">
+                                    <a href="#modal-docinhococo" class="modal-trigger">
+                                        <div class="product-badge">Clássico</div>
+                                        <div class="product-image">
+                                            <img src="https://i.ytimg.com/vi/gBDYHnQtCII/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBnfUfn5iB1S_Yh8__yGJk8xtUbSw" alt="Docinho de Coco">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(167)</span>
+                                            </div>
+                                            <h3 class="product-title">Docinho de Coco</h3>
+                                            <p class="product-description">Coco ralado fresco com leite condensado, puro sabor tropical</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 2,30</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!--Conteúdo da seção de gelados-->
+                <div class="tab-content" id="gelados">
+                    <section class="products-section">
+                        <div class="container">
+                            <div class="search-bar">
+                                <input id="search-gelados" type="text" placeholder="Açaí, Picolé, Sorvete...">
+                            </div>
+                            <div class="products-grid" id="produtos-gelados">
+                                <div class="product-card">
+                                    <a href="#modal-acai" class="modal-trigger">
+                                        <div class="product-badge">Bestseller</div>
+                                        <div class="product-image">
+                                            <img src="img/acai.jpg" alt="Açaí">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(426)</span>
+                                            </div>
+                                            <h3 class="product-title">Açaí</h3>
+                                            <p class="product-description">Polpa de açaí misturada com água, açúcar, espessantes e xarope de guaraná.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 7,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-picole" class="modal-trigger">
+                                        <div class="product-badge">Clássico</div>
+                                        <div class="product-image">
+                                            <img src="img/picole.png" alt="Picolé">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Picolé</h3>
+                                            <p class="product-description">Picolé de vários sabores.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 3,70</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-sorvete" class="modal-trigger">
+                                        <div class="product-badge">Clássico</div>
+                                        <div class="product-image">
+                                            <img src="img/sorvete.jpg" alt="Sorvete">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Sorvete</h3>
+                                            <p class="product-description">Sobremesa gelada à base de leite de vários sabores.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 15,70</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-pudim" class="modal-trigger">
+                                        <div class="product-badge premium">Premium</div>
+                                        <div class="product-image">
+                                            <img src="img/pudim.jpg" alt="Pudim">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Pudim</h3>
+                                            <p class="product-description">Doce feito à base de leite condensado.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 8,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-sacole" class="modal-trigger">
+                                        <div class="product-badge new">Novo</div>
+                                        <div class="product-image">
+                                            <img src="img/sacole.jpg" alt="Sacolé">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Sacolé</h3>
+                                            <p class="product-description">Sacolé de vários sabores.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 2,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-milkshake" class="modal-trigger">
+                                        <div class="product-badge">Clássico</div>
+                                        <div class="product-image">
+                                            <img src="img/milkshake.jpg" alt="Milkshake">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Milkshake</h3>
+                                            <p class="product-description">Leite batido com sorvete e frutas.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 7,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-mousse" class="modal-trigger">
+                                        <div class="product-badge new">Novo</div>
+                                        <div class="product-image">
+                                            <img src="img/mousse.jpg" alt="Mousse">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                                <span>(188)</span>
+                                            </div>
+                                            <h3 class="product-title">Mousse</h3>
+                                            <p class="product-description">Mousse de vários sabores.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 5,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!--Conteudo da seção de bolos e tortas-->
+                <div class="tab-content" id="bolos">
+                    <section class="products-section">
+                        <div class="container">
+                            <div class="search-bar">
+                                <input id="search-bolos" type="text" placeholder="Torta de Maracujá, Red Velvet...">
+                            </div>
+                            <div class="products-grid" id="produtos-bolos">
+                                <div class="product-card">
+                                    <a href="#modal-tortaalema" class="modal-trigger">
+                                        <div class="product-badge">Bestseller</div>
+                                        <div class="product-image">
+                                            <img src="img/tortaalema.jpg" alt="Torta Alemã">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Torta Alemã</h3>
+                                            <p class="product-description">Pavê de creme especial à base de creme de leite e cobertura com doce de ovos e calda de chocolate.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 25,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-cakemorango" class="modal-trigger">
+                                        <div class="product-badge premium">Premium</div>
+                                        <div class="product-image">
+                                            <img src="img/cakemorago.jpg" alt="Cake de Morango">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Cake de Morango</h3>
+                                            <p class="product-description">Torta deliciosa com base de biscoito Maisena e manteiga, recheada com mousse cremoso de morango e coberta com morangos e chocolate branco.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 28,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-florestanegra" class="modal-trigger">
+                                        <div class="product-badge premium">Premium</div>
+                                        <div class="product-image">
+                                            <img src="img/florestaegra.jpg" alt="Floresta Negra">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Floresta Negra</h3>
+                                            <p class="product-description">Massa de chocolate recheada com creme de chocolate, cereja e chantilly. Cobertura com raspas de chocolate.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 30,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-redvelvet" class="modal-trigger">
+                                        <div class="product-badge premium">Premium</div>
+                                        <div class="product-image">
+                                            <img src="img/redvelvet.jpg" alt="Red Velvet">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Red Velvet</h3>
+                                            <p class="product-description">Massa macia e úmida de cacau e baunilha, recheado e coberto com creme de cream cheese e manteiga, levemente adoçado.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 32,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-tortadeamendoim" class="modal-trigger">
+                                        <div class="product-badge">Popular</div>
+                                        <div class="product-image">
+                                            <img src="img/tortadeamendoim..jpg" alt="Torta de Amendoim">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Torta de Amendoim</h3>
+                                            <p class="product-description">Sobremesa gelada com camadas de bolacha, creme de amendoim, amendoim torrado e toque opcional de doce de leite.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 25,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-banoffee" class="modal-trigger">
+                                        <div class="product-badge new">Novo</div>
+                                        <div class="product-image">
+                                            <img src="img/bannofee.jpg" alt="Banoffee">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Banoffee</h3>
+                                            <p class="product-description">Torta gelada com base de biscoito maizena e margarina, recheada com doce de leite, bananas em rodelas, nata e finalizada com canela em pó.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 28,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-tortamaracuja" class="modal-trigger">
+                                        <div class="product-badge">Clássico</div>
+                                        <div class="product-image">
+                                            <img src="img/tortamaracuja.jpg" alt="Torta de Maracujá">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Torta de Maracujá</h3>
+                                            <p class="product-description">Torta de maracujá com massa amanteigada, recheio cremoso de leite condensado e creme de leite, finalizada com cobertura de polpa natural levemente doce e azeda.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 27,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-tortadeninho" class="modal-trigger">
+                                        <div class="product-badge">Popular</div>
+                                        <div class="product-image">
+                                            <img src="img/tortadeninho.jpg" alt="Torta de Ninho">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Torta de Ninho</h3>
+                                            <p class="product-description">Torta gelada de Nutella com base crocante de bolacha maisena, recheio cremoso de leite Ninho e cobertura suave, finalizada com toque de leite em pó.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 29,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-tortalimao" class="modal-trigger">
+                                        <div class="product-badge">Clássico</div>
+                                        <div class="product-image">
+                                            <img src="img/tortalimao.jpg" alt="Torta de Limão">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Torta de Limão</h3>
+                                            <p class="product-description">Torta de limão com massa amanteigada, recheio cremoso de leite condensado e limão, coberta com merengue leve e dourado.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 26,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-bolobaunilha" class="modal-trigger">
+                                        <div class="product-badge">Popular</div>
+                                        <div class="product-image">
+                                            <img src="img/bolobaunilha.jpg" alt="Bolo de Baunilha">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Bolo de Baunilha</h3>
+                                            <p class="product-description">Bolo leve e fofo com toque de baunilha, feito com massa amanteigada e textura macia.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 22,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-bolochocolate" class="modal-trigger">
+                                        <div class="product-badge new">Novo</div>
+                                        <div class="product-image">
+                                            <img src="img/bolochocolate.jpg" alt="Bolo de Chocolate com Amêndoas">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Bolo de Chocolate com Amêndoas</h3>
+                                            <p class="product-description">Bolo de chocolate com farinha de amêndoas e leite de coco, coberto com calda cremosa de cacau e chocolate 70%.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 27,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-bololaranja" class="modal-trigger">
+                                        <div class="product-badge">Clássico</div>
+                                        <div class="product-image">
+                                            <img src="img/bololaranja.jpg" alt="Bolo de Laranja">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Bolo de Laranja</h3>
+                                            <p class="product-description">Bolo de laranja fofinho com sabor cítrico natural, finalizado com calda doce e perfumada de suco de laranja.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 23,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-bolobanana" class="modal-trigger">
+                                        <div class="product-badge new">Novo</div>
+                                        <div class="product-image">
+                                            <img src="img/bolobanana.jpg" alt="Bolo de Banana">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Bolo de Banana</h3>
+                                            <p class="product-description">Bolo de banana macio e aromático, feito com bananas maduras e coberto com açúcar e canela.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 24,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-bolomaracuja" class="modal-trigger">
+                                        <div class="product-badge new">Novo</div>
+                                        <div class="product-image">
+                                            <img src="img/bolomaracuja.jpg" alt="Bolo de Maracujá">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Bolo de Maracujá</h3>
+                                            <p class="product-description">Bolo de maracujá com massa fofa e cobertura cremosa de leite condensado, creme de leite e polpa natural da fruta.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 25,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-bolochurros" class="modal-trigger">
+                                        <div class="product-badge new">Novo</div>
+                                        <div class="product-image">
+                                            <img src="img/bolochrros.jpg" alt="Bolo de Churros">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Bolo de Churros</h3>
+                                            <p class="product-description">Bolo de canela e baunilha macio, finalizado com cobertura de doce de leite e toque de açúcar e canela.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 27,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-bolocenoura" class="modal-trigger">
+                                        <div class="product-badge">Popular</div>
+                                        <div class="product-image">
+                                            <img src="img/bolocenoura.jpg" alt="Bolo de Cenoura com Chocolate">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Bolo de Cenoura com Chocolate</h3>
+                                            <p class="product-description">Bolo de cenoura fofinho com recheio cremoso de brigadeiro feito com chocolate, leite condensado e creme de leite.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 26,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-bolofuba" class="modal-trigger">
+                                        <div class="product-badge">Clássico</div>
+                                        <div class="product-image">
+                                            <img src="img/bolofuba.jpg" alt="Bolo de Fubá">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Bolo de Fubá</h3>
+                                            <p class="product-description">Bolo de fubá cremoso com queijo parmesão, textura macia e sabor equilibrado entre o doce e o salgado.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 22,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!--Conteúdo de seção de folhados e panquecas-->
+                <div class="tab-content" id="folhados">
+                    <section class="products-section">
+                        <div class="container">
+                            <div class="search-bar">
+                                <input id="search-folhados" type="text" placeholder="Crepe, Folhado, Panqueca...">
+                            </div>
+                            <div class="products-grid" id="produtos-folhados">
+                                <div class="product-card">
+                                    <a href="#modal-crepeavela" class="modal-trigger">
+                                        <div class="product-badge">Bestseller</div>
+                                        <div class="product-image">
+                                            <img src="img/crepe-com-recheio-de-creme-de-avela.webp" alt="Crepe recheado com creme de avelã">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(534)</span>
+                                            </div>
+                                            <h3 class="product-title">Crepe recheado com creme de avelã</h3>
+                                            <p class="product-description">Uma massa fininha e dourada, recheada com o delicioso creme de avelã que derrete na boca. O equilíbrio perfeito entre suavidade e sabor!</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 7,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-folhadodocedeleite" class="modal-trigger">
+                                        <div class="product-badge premium">Premium</div>
+                                        <div class="product-image">
+                                            <img src="img/Doces_folhados_docedeleite2.webp" alt="Folhado de doce de leite">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Folhado de doce de leite</h3>
+                                            <p class="product-description">Massa folhada crocante e levemente dourada, recheada com o irresistível doce de leite. Uma combinação clássica e deliciosa que derrete na boca.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 7,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-crepemorangos" class="modal-trigger">
+                                        <div class="product-badge">Clássico</div>
+                                        <div class="product-image">
+                                            <img src="img/Receita-de-crepe-doce.jpg" alt="Crepe recheado com morangos e creme">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Crepe recheado com morangos e creme</h3>
+                                            <p class="product-description">Crepe macio e quentinho, recheado com morangos frescos e um creme suave. Uma sobremesa leve e fresca, perfeita para os amantes de frutas!</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 8,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-milfolhasmorango" class="modal-trigger">
+                                        <div class="product-badge">Clássico</div>
+                                        <div class="product-image">
+                                            <img src="img/mil-folhas-de-morango-com-doce-de-leite.jpg" alt="Mil folhas de morango com doce de leite">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Mil folhas de morango com doce de leite</h3>
+                                            <p class="product-description">Camadas finas de massa crocante intercaladas com morangos frescos e doce de leite cremoso. Uma explosão de sabores que combina o frescor da fruta com a doçura do doce de leite.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 9,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-panquecadoceleite" class="modal-trigger">
+                                        <div class="product-badge limited">Especial</div>
+                                        <div class="product-image">
+                                            <img src="img/panqueca-doce-leite-pgm2.webp" alt="Panqueca de doce de leite">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Panqueca de doce de leite</h3>
+                                            <p class="product-description">Panqueca fofinha e quentinha, recheada com doce de leite cremoso. Uma combinação irresistível que vai conquistar seu paladar com cada mordida.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 7,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <a href="#modal-milfolhaslimao" class="modal-trigger">
+                                        <div class="product-badge new">Novo</div>
+                                        <div class="product-image">
+                                            <img src="img/folhas-de-creme-de-limao-siciliano_landscapeThumbnail_en-US.jpeg" alt="Mil folhas de creme de limão">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-rating">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h3 class="product-title">Mil folhas de creme de limão</h3>
+                                            <p class="product-description">Camadas crocantes de massa folhada combinadas com um creme de limão suave e refrescante. Uma sobremesa leve, cítrica e irresistivelmente deliciosa.</p>
+                                            <div class="product-price">
+                                                <span class="current-price">R$ 8,00</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-actions">
+                                        <div class="quantity-selector">
+                                            <button class="qty-btn minus">-</button>
+                                            <span class="qty-value">1</span>
+                                            <button class="qty-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn" data-id="1" data-name="Brigadeiro" data-price="2.50">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+        </section>
+        <!--Modals-->
+        <section>
+                <div class="modal" id="modal-crepeavela">
+                    <div class="modal-content">
+                        <a href="#" class="fechar-modal">&times;</a>
+                        <div class="modal-detalhes">
+                            <img src="img/crepe-com-recheio-de-creme-de-avela.webp" alt="Crepe recheado com creme de avelã">
+                            <div class="modal-info">
+                                <h2>Crepe recheado com creme de avelã</h2>
+                                <p>Uma massa fininha e dourada, recheada com o delicioso creme de avelã que derrete na boca. O equilíbrio perfeito entre suavidade e sabor!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal" id="modal-folhadodocedeleite">
+                    <div class="modal-content">
+                        <a href="#" class="fechar-modal">&times;</a>
+                        <div class="modal-detalhes">
+                            <img src="img/Doces_folhados_docedeleite2.webp" alt="Folhado de doce de leite">
+                            <div class="modal-info">
+                                <h2>Folhado de doce de leite</h2>
+                                <p>Massa folhada crocante e levemente dourada, recheada com o irresistível doce de leite. Uma combinação clássica e deliciosa que derrete na boca.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal" id="modal-crepemorangos">
+                    <div class="modal-content">
+                        <a href="#" class="fechar-modal">&times;</a>
+                        <div class="modal-detalhes">
+                            <img src="img/Receita-de-crepe-doce.jpg" alt="Crepe recheado com morangos e creme">
+                            <div class="modal-info">
+                                <h2>Crepe recheado com morangos e creme</h2>
+                                <p>Crepe macio e quentinho, recheado com morangos frescos e um creme suave. Uma sobremesa leve e fresca, perfeita para os amantes de frutas!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal" id="modal-milfolhasmorango">
+                    <div class="modal-content">
+                        <a href="#" class="fechar-modal">&times;</a>
+                        <div class="modal-detalhes">
+                            <img src="img/mil-folhas-de-morango-com-doce-de-leite.jpg" alt="Mil folhas de morango com doce de leite">
+                            <div class="modal-info">
+                                <h2>Mil folhas de morango com doce de leite</h2>
+                                <p>Camadas finas de massa crocante intercaladas com morangos frescos e doce de leite cremoso. Uma explosão de sabores que combina o frescor da fruta com a doçura do doce de leite.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal" id="modal-panquecadoceleite">
+                    <div class="modal-content">
+                        <a href="#" class="fechar-modal">&times;</a>
+                        <div class="modal-detalhes">
+                            <img src="img/panqueca-doce-leite-pgm2.webp" alt="Panqueca de doce de leite">
+                            <div class="modal-info">
+                                <h2>Panqueca de doce de leite</h2>
+                                <p>Panqueca fofinha e quentinha, recheada com doce de leite cremoso. Uma combinação irresistível que vai conquistar seu paladar com cada mordida.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal" id="modal-milfolhaslimao">
+                    <div class="modal-content">
+                        <a href="#" class="fechar-modal">&times;</a>
+                        <div class="modal-detalhes">
+                            <img src="img/folhas-de-creme-de-limao-siciliano_landscapeThumbnail_en-US.jpeg" alt="Mil folhas de creme de limão">
+                            <div class="modal-info">
+                                <h2>Mil folhas de creme de limão</h2>
+                                <p>Camadas crocantes de massa folhada combinadas com um creme de limão suave e refrescante. Uma sobremesa leve, cítrica e irresistivelmente deliciosa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="modal" id="modal-tortaalema">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="img/tortaalema.jpg" alt="Torta Alemã">
+                        <div class="modal-info">
+                            <h2>Torta Alemã</h2>
+                            <p>Pavê de creme especial à base de creme de leite e cobertura com doce de ovos e calda de chocolate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-cakemorango">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="img/cakemorago.jpg" alt="Cake de Morango">
+                        <div class="modal-info">
+                            <h2>Cake de Morango</h2>
+                            <p>Torta deliciosa com base de biscoito Maisena e manteiga, recheada com mousse cremoso de morango e coberta com morangos e chocolate branco.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-florestanegra">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="img/florestaegra.jpg" alt="Floresta Negra">
+                        <div class="modal-info">
+                            <h2>Floresta Negra</h2>
+                            <p>Massa de chocolate recheada com creme de chocolate, cereja e chantilly. Cobertura com raspas de chocolate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-redvelvet">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="img/redvelvet.jpg" alt="Red Velvet">
+                        <div class="modal-info">
+                            <h2>Red Velvet</h2>
+                            <p>Massa macia e úmida de cacau e baunilha, recheado e coberto com creme de cream cheese e manteiga, levemente adoçado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-tortadeamendoim">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="img/tortadeamendoim..jpg" alt="Torta de Amendoim">
+                        <div class="modal-info">
+                            <h2>Torta de Amendoim</h2>
+                            <p>Sobremesa gelada com camadas de bolacha, creme de amendoim, amendoim torrado e toque opcional de doce de leite.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-banoffee">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="img/bannofee.jpg" alt="Banoffee">
+                        <div class="modal-info">
+                            <h2>Banoffee</h2>
+                            <p>Torta gelada com base de biscoito maizena e margarina, recheada com doce de leite, bananas em rodelas, nata e finalizada com canela em pó.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-tortamaracuja">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="img/tortamaracuja.jpg" alt="Torta de Maracujá">
+                        <div class="modal-info">
+                            <h2>Torta de Maracujá</h2>
+                            <p>Torta de maracujá com massa amanteigada, recheio cremoso de leite condensado e creme de leite, finalizada com cobertura de polpa natural levemente doce e azeda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-tortadeninho">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="img/tortadeninho.jpg" alt="Torta de Ninho">
+                        <div class="modal-info">
+                            <h2>Torta de Ninho</h2>
+                            <p>Torta gelada de Nutella com base crocante de bolacha maisena, recheio cremoso de leite Ninho e cobertura suave, finalizada com toque de leite em pó.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-tortalimao">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="img/tortalimao.jpg" alt="Torta de Limão">
+                        <div class="modal-info">
+                            <h2>Torta de Limão</h2>
+                            <p>Torta de limão com massa amanteigada, recheio cremoso de leite condensado e limão, coberta com merengue leve e dourado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-bolobaunilha">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="img/bolobaunilha.jpg" alt="Bolo de Baunilha">
+                        <div class="modal-info">
+                            <h2>Bolo de Baunilha</h2>
+                            <p>Bolo leve e fofo com toque de baunilha, feito com massa amanteigada e textura macia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-bolochocolate">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="img/bolochocolate.jpg" alt="Bolo de Chocolate com Amêndoas">
+                        <div class="modal-info">
+                            <h2>Bolo de Chocolate com Amêndoas</h2>
+                            <p>Bolo de chocolate com farinha de amêndoas e leite de coco, coberto com calda cremosa de cacau e chocolate 70%.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-bololaranja">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="img/bololaranja.jpg" alt="Bolo de Laranja">
+                        <div class="modal-info">
+                            <h2>Bolo de Laranja</h2>
+                            <p>Bolo de laranja fofinho com sabor cítrico natural, finalizado com calda doce e perfumada de suco de laranja.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-bolobanana">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="img/bolobanana.jpg" alt="Bolo de Banana">
+                        <div class="modal-info">
+                            <h2>Bolo de Banana</h2>
+                            <p>Bolo de banana macio e aromático, feito com bananas maduras e coberto com açúcar e canela.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-bolomaracuja">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="img/bolomaracuja.jpg" alt="Bolo de Maracujá">
+                        <div class="modal-info">
+                            <h2>Bolo de Maracujá</h2>
+                            <p>Bolo de maracujá com massa fofa e cobertura cremosa de leite condensado, creme de leite e polpa natural da fruta.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-bolochurros">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="img/bolochrros.jpg" alt="Bolo de Churros">
+                        <div class="modal-info">
+                            <h2>Bolo de Churros</h2>
+                            <p>Bolo de canela e baunilha macio, finalizado com cobertura de doce de leite e toque de açúcar e canela.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-bolocenoura">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="img/bolocenoura.jpg" alt="Bolo de Cenoura com Chocolate">
+                        <div class="modal-info">
+                            <h2>Bolo de Cenoura com Chocolate</h2>
+                            <p>Bolo de cenoura fofinho com recheio cremoso de brigadeiro feito com chocolate, leite condensado e creme de leite.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-bolofuba">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="img/bolofuba.jpg" alt="Bolo de Fubá">
+                        <div class="modal-info">
+                            <h2>Bolo de Fubá</h2>
+                            <p>Bolo de fubá cremoso com queijo parmesão, textura macia e sabor equilibrado entre o doce e o salgado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-bolopacoca">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="img/bolopaçoca.jpg" alt="Bolo de Paçoca">
+                        <div class="modal-info">
+                            <h2>Bolo de Paçoca</h2>
+                            <p>Bolo de paçoca macio e aromático, coberto com creme doce de leite condensado e paçoca triturada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-acai">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="img/acai.jpg" alt="Açaí">
+                        <div class="modal-info">
+                            <h2>Açaí</h2>
+                            <p>Polpa de açaí misturada com água, açúcar, espessantes e xarope de guaraná.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-picole">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes2">
+                        <img class="modalImagem" data-tipo="picole" src="img/picole.png" alt="Picolé">
+                        <div class="modal-info">
+                            <h2>Picolé</h2>
+                            <p>Picolé de vários sabores.</p>
+                            <p><strong>Escolha o sabor:</strong></p>
+                            <select class="selecionarSabor" data-tipo="picole">
+                                <option value="picolechocolate.jpg">Chocolate</option>
+                                <option value="picolemorango.png">Morango</option>
+                                <option value="picolelimao.png">Limão</option>
+                                <option value="picoleuva.jpg">Uva</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-sorvete">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes2">
+                        <img class="modalImagem" data-tipo="sorvete" src="img/sorvete.jpg" alt="Sorvete">
+                        <div class="modal-info">
+                            <h2>Sorvete</h2>
+                            <p>Sobremesa gelada à base de leite de vários sabores.</p>
+                            <p><strong>Escolha o sabor:</strong></p>
+                            <select class="selecionarSabor" data-tipo="sorvete">
+                                <option value="sorvetechocolate.jpg">Chocolate</option>
+                                <option value="sorvetemorango.jpg">Morango</option>
+                                <option value="sorvetecreme.jpg">Creme</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-pudim">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="img/pudim.jpg" alt="Pudim">
+                        <div class="modal-info">
+                            <h2>Pudim</h2>
+                            <p>Doce feito à base de leite condensado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-sacole">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes2">
+                        <img class="modalImagem" data-tipo="sacole" src="img/sacole.jpg" alt="Sacolé">
+                        <div class="modal-info">
+                            <h2>Sacolé</h2>
+                            <p>Sacolé de vários sabores.</p>
+                            <p><strong>Escolha o sabor:</strong></p>
+                            <select class="selecionarSabor" data-tipo="sacole">
+                                <option value="sacoleninhonuleta.jpg">Ninho com Nutella</option>
+                                <option value="sacolebeijinho.jpg">Beijinho</option>
+                                <option value="sacoledocedeleite.jpg">Doce de leite</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-milkshake">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes2">
+                        <img class="modalImagem" data-tipo="milkshake" src="img/milkshake.jpg" alt="Milkshake">
+                        <div class="modal-info">
+                            <h2>Milkshake</h2>
+                            <p>Leite batido com sorvete e frutas.</p>
+                            <p><strong>Escolha o sabor:</strong></p>
+                            <select class="selecionarSabor" data-tipo="milkshake">
+                                <option value="milkshakechocolate.jpg">Chocolate</option>
+                                <option value="milkshakemorango.jpeg">Morango</option>
+                                <option value="milkshakeovomaltine.jpg">Ovomaltine</option>
+                                <option value="milkshakemaracuja.jpg">Maracujá</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-mousse">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes2">
+                        <img class="modalImagem" data-tipo="mousse" src="img/mousse.jpg" alt="Mousse">
+                        <div class="modal-info">
+                            <h2>Mousse</h2>
+                            <p>Mousse de vários sabores.</p>
+                            <p><strong>Escolha o sabor:</strong></p>
+                            <select class="selecionarSabor" data-tipo="mousse">
+                                <option value="moussemaracuja.jpg">Maracujá</option>
+                                <option value="mousselimao.jpg">Limão</option>
+                                <option value="moussechocolate.jpg">Chocolate</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-brigadeiro">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="https://s2-receitas.glbimg.com/hT_mwWzl5dBsGdINZKnU2GFt3iI=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2023/O/6/O6gVqvQ02RbAo8TPZGcQ/brigadeiro-receita.jpg" alt="Brigadeiro">
+                        <div class="modal-info">
+                            <h2>Brigadeiro</h2>
+                            <p>O clássico doce brasileiro feito com leite condensado e chocolate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-beijinho">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8lW4ii2Y6Uwi1ImJyWswyeR5smlLQWjIPvw&s" alt="Beijinho">
+                        <div class="modal-info">
+                            <h2>Beijinho</h2>
+                            <p>Doce de coco com leite condensado, coberto com coco ralado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-casadinho">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="https://receitatodahora.com.br/wp-content/uploads/2022/09/brigadeiro-casadinho.jpg" alt="Casadinho">
+                        <div class="modal-info">
+                            <h2>Casadinho</h2>
+                            <p>Metade brigadeiro, metade beijinho - o melhor dos dois mundos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-cajuzinho">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="https://d2qcpt1idvpipw.cloudfront.net/recipes/2020/10/cajuzinho-perfeito_28082018155200.jpg" alt="Cajuzinho">
+                        <div class="modal-info">
+                            <h2>Cajuzinho</h2>
+                            <p>Doce de amendoim com formato de caju, coberto com açúcar cristal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-olhodesogra">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="https://cdn.casaeculinaria.com/wp-content/uploads/2024/04/09093952/Olho-de-sogra-1.webp" alt="Olho de Sogra">
+                        <div class="modal-info">
+                            <h2>Olho de Sogra</h2>
+                            <p>Doce de coco com ameixa seca no centro, uma delícia tradicional</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal-docinhococo">
+                <div class="modal-content">
+                    <a href="#" class="fechar-modal">&times;</a>
+                    <div class="modal-detalhes">
+                        <img src="https://i.ytimg.com/vi/gBDYHnQtCII/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBnfUfn5iB1S_Yh8__yGJk8xtUbSw" alt="Docinho de Coco">
+                        <div class="modal-info">
+                            <h2>Docinho de Coco</h2>
+                            <p>Coco ralado fresco com leite condensado, puro sabor tropical</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside>
+        <div class="cart-sidebar" id="cart-sidebar">
+            <div class="cart-header">
+                <h3>Seu Carrinho</h3>
+                <button class="close-cart" id="close-cart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <div class="empty-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Seu carrinho está vazio</p>
+                    <small>Adicione alguns doces deliciosos!</small>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total: R$ <span id="cart-total">0,00</span></span>
+                </div>
+                <button class="checkout-btn" id="checkout-btn">
+                    <i class="fas fa-credit-card"></i>
+                    Finalizar Compra
+                </button>
+            </div>
+        </div>
+        <div class="cart-overlay" id="cart-overlay"></div>
+    </aside>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-candy-cane"></i>
+                        <h3>Doces Deliciosos</h3>
+                    </div>
+                    <p>Os melhores doces artesanais do Brasil, feitos com muito carinho e ingredientes selecionados.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Mais Links</h4>
+                    <ul>
+                        <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                        <li><a href="onde-estamos.html">Onde Nos Encontrar</a></li>
+                        <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (21) 99999-9999</p>
+                        <p><i class="fas fa-envelope"></i> contato@docesdeliciosos.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p id="footer-date"></p>
+                <p>&copy; 2025 Doces Deliciosos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/cart.js"></script>
+</body>
+</html>
+
